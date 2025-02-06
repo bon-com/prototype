@@ -39,6 +39,11 @@ public class Type2Controller {
 		return "type2/first";
 	}
 	
+	/**
+	 * 送信フォームの取得
+	 * @param form
+	 * @return
+	 */
 	@PostMapping(value="type2/", params="send")
 	public String send(@ModelAttribute("type2Form") Type2Form form) {
 		logger.debug("★★★form.name：" + form.getName() + "★★★");

@@ -45,6 +45,11 @@ public class Type3Controller {
 		return "type3/first";
 	}
 
+	/**
+	 * 送信フォームの取得
+	 * @param form
+	 * @return
+	 */
 	@PostMapping(value = "type3/", params = "send")
 	public String send(@ModelAttribute("type3Form") Type3Form form) {
 		// フォームを使ってあれこれ
