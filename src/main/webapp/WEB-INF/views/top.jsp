@@ -10,7 +10,13 @@
 	<div class="container mt-5">
 		<h2 class="text-center">スニペットまとめ</h2>
 		<p>
-			<a href="<c:url value='/type1/'/>">さまざまなGetリクエスト方法</a>
+			<a href="<c:url value='/type1/'/>">さまざまなGETリクエスト方法</a>
+		</p>
+		<p>
+			<a href="<c:url value='/type2/'/>">基本的なPOSTリクエスト方法</a>
+		</p>
+		<p>
+			<a href="<c:url value='/type3/'/>">基本的なPOSTリクエスト方法（いろいろなフォーム部品）</a>
 		</p>
 	</div>
 </body>

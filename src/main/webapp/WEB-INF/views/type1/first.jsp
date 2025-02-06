@@ -18,6 +18,10 @@
 		<p>
 			<a href="<c:url value='/type1/foo/param?id=5&name=abc'/>">GETリクエストその３（クエリパラメータ）</a>
 		</p>
+
+		<div class="form-group text-center">
+			<a href="<c:url value="/"/>" class="btn btn-danger mr-4 px-5">戻る</a>
+		</div>
 	</div>
 </body>
 </html>

@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * さまざまなGetリクエスト方法
+ * さまざまなGETリクエスト方法
  * 
  */
 @Controller
 public class Type1Controller {
 	
+	/** ロガー */
 	private static final Logger logger = LoggerFactory.getLogger(Type1Controller.class);
 	
 	/**
