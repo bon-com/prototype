@@ -12,6 +12,16 @@
 			</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
+
+		<!-- ファイルアップロードに関する設定 -->
+		<multipart-config>
+			<!-- アップロードされるファイルの最大サイズ -->
+			<max-file-size>10485760</max-file-size> <!-- ここでは10MB -->
+			<!-- リクエスト全体の最大サイズ -->
+			<max-request-size>20971520</max-request-size> <!-- ここでは20MB -->
+			<!-- ファイルがディスクに一時保存されるサイズのしきい値 -->
+			<file-size-threshold>0</file-size-threshold>
+		</multipart-config>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>app</servlet-name>
@@ -53,6 +63,7 @@
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
+
 	<!-- 拡張子「.jsp」ファイルはすべてUTF-8でエンコーディングされて、 各JSPの先頭にinclude.jspを含むようにする設定。 -->
 	<jsp-config>
 		<jsp-property-group>

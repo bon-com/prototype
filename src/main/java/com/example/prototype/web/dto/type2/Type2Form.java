@@ -3,7 +3,7 @@ package com.example.prototype.web.dto.type2;
 import lombok.Data;
 
 /**
- * 基本的なPOSTリクエスト方法
+ * POSTリクエスト方法
  * 
  */
 @Data

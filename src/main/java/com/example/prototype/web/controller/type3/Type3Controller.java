@@ -11,12 +11,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.prototype.web.dto.type3.Type3Form;
 
 /**
- * 基本的なPOSTリクエスト方法（いろいろなフォーム部品）
+ * POSTリクエスト方法（いろいろなフォーム部品）
  * 
  */
 @Controller
 public class Type3Controller {
-
+	
 	/**
 	 * フォームの設定 '@ModelAttributeアノテーションを付けたメソッドを用意することで、
 	 * ハンドラメソッドが実行される前にリクエストスコープにフォームオブジェクト（今回は Type3Form）が自動的に格納される。

@@ -4,11 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <%@ include file="/WEB-INF/common/header_common.jsp"%>
-<title>さまざまなGETリクエスト方法</title>
+<title>GETリクエスト方法</title>
 </head>
 <body>
 	<div class="container mt-5">
-		<h2 class="text-center">さまざまなGETリクエスト方法</h2>
+		<h2 class="text-center">GETリクエスト方法</h2>
 		<p>
 			<a href="<c:url value='/type1/foo/1'/>">GETリクエストその１（パスパラメータ）</a>
 		</p>

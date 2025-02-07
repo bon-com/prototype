@@ -4,6 +4,7 @@ import java.util.Date;
 import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.web.multipart.MultipartFile;
 
 import lombok.Data;
 
@@ -32,4 +33,6 @@ public class Type3Form {
 	private String gender;
 	/** 趣味 */
 	private String hobby;
+	/** ファイル */
+	private MultipartFile file;
 }

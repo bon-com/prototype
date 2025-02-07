@@ -8,16 +8,60 @@
 </head>
 <body>
 	<div class="container mt-5">
-		<h2 class="text-center">スニペットまとめ</h2>
-		<p>
-			<a href="<c:url value='/type1/'/>">さまざまなGETリクエスト方法</a>
-		</p>
-		<p>
-			<a href="<c:url value='/type2/'/>">基本的なPOSTリクエスト方法</a>
-		</p>
-		<p>
-			<a href="<c:url value='/type3/'/>">基本的なPOSTリクエスト方法（いろいろなフォーム部品）</a>
-		</p>
+		<h2 class="text-center mb-5">スニペットまとめ</h2>
+
+		<table class="table table-bordered ">
+			<thead class="table-primary"">
+				<tr>
+					<th>リンク</th>
+					<th>説明</th>
+				</tr>
+			</thead>
+			<tbody class="">
+				<tr>
+					<td>
+						<a href="<c:url value='/type1/'/>">GETリクエスト方法</a>
+					</td>
+					<td>GETリクエストの受け取り方についてメモ。</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type2/'/>">POSTリクエスト方法</a>
+					</td>
+					<td>POSTリクエストの受け取り方についてメモ。</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type3/'/>">POSTリクエスト方法（いろいろなフォーム部品）</a>
+					</td>
+					<td>
+						いろんなフォーム部品の疎通方法についてメモ。<br>テキストボックス、セレクトボックス、ファイルなど。
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type4/'/>">都道府県プロパティファイルからの取得</a>
+					</td>
+					<td>
+						都道府県プロパティファイルから、中身を取得する方法についてメモ。<br> PropertyUtilsに詳細は記載。
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type5/'/>">入力チェックの基本</a>
+					</td>
+					<td>Beanバリデーションを行うための基本についてメモ。</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type6/'/>">さまざまな入力チェック</a>
+					</td>
+					<td>BeanバリデーションやHibernateバリデーションが提供するアノテーションについてメモ。</td>
+				</tr>
+			</tbody>
+		</table>
 	</div>
+
+
 </body>
 </html>

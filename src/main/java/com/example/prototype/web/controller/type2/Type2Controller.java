@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.example.prototype.web.dto.type2.Type2Form;
 
 /**
- * 基本的なPOSTリクエスト方法
+ * POSTリクエスト方法
  * 
  */
 @Controller

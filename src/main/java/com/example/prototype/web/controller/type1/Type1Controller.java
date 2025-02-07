@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * さまざまなGETリクエスト方法
+ * GETリクエスト方法
  * 
  */
 @Controller

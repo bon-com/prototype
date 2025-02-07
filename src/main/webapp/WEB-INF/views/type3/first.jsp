@@ -4,12 +4,12 @@
 <head>
 <meta charset="UTF-8">
 <%@ include file="/WEB-INF/common/header_common.jsp"%>
-<title>基本的なPOSTリクエスト方法（いろいろなフォーム部品）</title>
+<title>POSTリクエスト方法（いろいろなフォーム部品）</title>
 </head>
 <body>
 	<div class="container mt-5">
-		<h2 class="text-center">基本的なPOSTリクエスト方法（いろいろなフォーム部品）</h2>
-		<form:form modelAttribute="type3Form" class="mt-4">
+		<h2 class="text-center">POSTリクエスト方法（いろいろなフォーム部品）</h2>
+		<form:form modelAttribute="type3Form" class="mt-4" enctype="multipart/form-data">
 			<table class="table table-bordered">
 				<!-- テキストフィールド -->
 				<tr>
@@ -94,6 +94,13 @@
 						<div class="form-group">
 							<form:select path="hobby" cssClass="form-control" items="${hobbies}" />
 						</div>
+					</td>
+				</tr>
+				<!-- ファイル参照 -->
+				<tr>
+					<th class="col-3">ファイル</th>
+					<td class="col-7">
+						<input type="file" name="file" />
 					</td>
 				</tr>
 			</table>
