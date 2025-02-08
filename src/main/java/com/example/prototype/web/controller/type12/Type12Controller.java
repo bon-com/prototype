@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class Type12Controller {
 	
-
 	/**
 	 * 初期画面表示
 	 * @return
@@ -21,7 +20,7 @@ public class Type12Controller {
 	}
 	
 	/**
-	 * 
+	 * NullPointerExceptionが呼び出し元へスローされる
 	 * @return
 	 */
 	@GetMapping(value="type12/error1")
@@ -30,7 +29,7 @@ public class Type12Controller {
 	}
 	
 	/**
-	 * JSP側でorg.apache.jasper.JasperException例外を発生させるハンドラ
+	 * NumberFormatExceptionが呼び出し元へスローされる
 	 * @return
 	 */
 	@GetMapping(value = "type12/error2")

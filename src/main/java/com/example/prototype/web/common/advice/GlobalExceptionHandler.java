@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
+	/**
+	 * NullPointerExceptionとIllegalArgumentExceptionとサブクラスをハンドリングする
+	 * @param e
+	 * @return
+	 */
 	@ExceptionHandler({NullPointerException.class, IllegalArgumentException.class})
 	public String handleDataNotFoundException(RuntimeException e) {
 		return "errors/app_error";
