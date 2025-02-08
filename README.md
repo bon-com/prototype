@@ -62,5 +62,5 @@ FieldsMatch、FieldsMatchListを使用して相関チェック用独自アノテ
 BaseFormを継承したフォームクラスを使用する  
 PasswordMatchValidatorを作成してorg.springframework.validationを実装したクラスを作成する
 
-### ◇type10：  
+### ◇type11：  
 フロントコントローラーやJSP側、サーブレットフィルターでエラーが発生する場合はweb.xmlで例外ハンドリングを行う
