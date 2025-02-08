@@ -24,6 +24,7 @@ ContextLoaderListenerが親、DispatcherServletは子という関係
  - type8：相関チェック独自ルール追加（Bean Validation）
  - type9：相関チェックを使いまわす方法（Bean Validation）
  - type10：順序をつけた相関チェックを行う方法（Bean Validation）
+ - type11：web.xmlを使用した例外ハンドリング方法
 
 ## ◆補足説明
 
@@ -60,3 +61,6 @@ FieldsMatch、FieldsMatchListを使用して相関チェック用独自アノテ
 ### ◇type10：  
 BaseFormを継承したフォームクラスを使用する  
 PasswordMatchValidatorを作成してorg.springframework.validationを実装したクラスを作成する
+
+### ◇type10：  
+フロントコントローラーやJSP側、サーブレットフィルターでエラーが発生する場合はweb.xmlで例外ハンドリングを行う

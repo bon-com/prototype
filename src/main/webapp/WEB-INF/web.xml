@@ -63,7 +63,10 @@
 		<filter-name>CharacterEncodingFilter</filter-name>
 		<url-pattern>/*</url-pattern>
 	</filter-mapping>
-
+	<!-- デフォルトエラー -->
+	<error-page>
+		<location>/WEB-INF/views/errors/default_error.jsp</location>
+	</error-page>
 	<!-- 拡張子「.jsp」ファイルはすべてUTF-8でエンコーディングされて、 各JSPの先頭にinclude.jspを含むようにする設定。 -->
 	<jsp-config>
 		<jsp-property-group>
