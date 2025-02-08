@@ -58,6 +58,12 @@
 					</td>
 					<td>BeanバリデーションやHibernateバリデーションが提供するアノテーションについてメモ。</td>
 				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type7/'/>">入力チェック独自ルール追加</a>
+					</td>
+					<td>Beanバリデーションに独自ルール（アノテーション）を追加する方法についてメモ。</td>
+				</tr>
 			</tbody>
 		</table>
 	</div>

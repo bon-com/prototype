@@ -9,7 +9,7 @@
 <body>
 	<div class="container mt-5">
 		<h2 class="text-center">さまざまな入力チェック</h2>
-		<form:form modelAttribute="form" class="mt-4" enctype="multipart/form-data">
+		<form:form modelAttribute="form" class="mt-4">
 			<table class="table table-bordered">
 				<!-- テキストフィールド -->
 				<tr>
