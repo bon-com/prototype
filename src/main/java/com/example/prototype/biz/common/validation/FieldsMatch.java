@@ -4,6 +4,7 @@ import static java.lang.annotation.ElementType.*;
 import static java.lang.annotation.RetentionPolicy.*;
 
 import java.lang.annotation.Documented;
+import java.lang.annotation.Repeatable;
 import java.lang.annotation.Retention;
 import java.lang.annotation.Target;
 
@@ -17,6 +18,7 @@ import javax.validation.Payload;
 @Documented
 @Constraint(validatedBy = { FieldsMatchValidator.class })
 @Retention(RUNTIME)
+@Repeatable(FieldsMatchList.class) 
 @Target({ TYPE, ANNOTATION_TYPE })
 public @interface FieldsMatch {
 	String message() default "{FieldsMatch.default.message}";

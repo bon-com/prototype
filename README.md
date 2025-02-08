@@ -22,6 +22,7 @@ ContextLoaderListenerが親、DispatcherServletは子という関係
  - type6：さまざまな入力チェック（Bean Validation）
  - type7：入力チェック独自ルール追加（Bean Validation）
  - type8：相関チェック独自ルール追加（Bean Validation）
+ - type9：相関チェックを使いまわす方法（Bean Validation）
 
 ## ◆補足説明
 
@@ -51,4 +52,8 @@ Alphanumericに独自アノテーションルールを追加
 FieldsMatch、FieldsMatchValidatorに独自アノテーションを追加  
 Type8Formに作成したアノテーションの設定方法を記載  
 ValidationMessages.propertiesのパスワード（確認用）プロパティについて、記載方法に注意
+
+### ◇type9：  
+FieldsMatch、FieldsMatchListを使用して相関チェック用独自アノテーションを使いまわす
+
 
