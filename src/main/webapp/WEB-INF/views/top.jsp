@@ -87,10 +87,19 @@
 						<a href="<c:url value='/type11/'/>">web.xmlを使用した例外ハンドリング方法</a>
 					</td>
 					<td>
-						web.xmlを使用した例外ハンドリング方法についてメモ。 <br>サーブレットフィルターを実装していて発生したエラーや、フロントコントローラー（DispatcherServlet）、JSP側で発生するエラーをハンドリングする。
+						サーブレットフィルターを実装していて発生したエラーや、フロントコントローラー（DispatcherServlet）、JSP側で発生するエラーをハンドリングする。
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type12/'/>">HandlerExceptionResolverを使用した例外ハンドリング方法</a>
+					</td>
+					<td>
+						アプリケーション内（プレゼンテーション層やサービス層など）で例外が発生した場合、HandlerExceptionResolverを用いて例外ハンドリングを行う。
 					</td>
 				</tr>
 			</tbody>
+			
 		</table>
 	</div>
 

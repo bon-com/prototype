@@ -25,6 +25,7 @@ ContextLoaderListenerが親、DispatcherServletは子という関係
  - type9：相関チェックを使いまわす方法（Bean Validation）
  - type10：順序をつけた相関チェックを行う方法（Bean Validation）
  - type11：web.xmlを使用した例外ハンドリング方法
+ - type12：HandlerExceptionResolverを使用した例外ハンドリング方法
 
 ## ◆補足説明
 
@@ -64,3 +65,8 @@ PasswordMatchValidatorを作成してorg.springframework.validationを実装し�
 
 ### ◇type11：  
 フロントコントローラーやJSP側、サーブレットフィルターでエラーが発生する場合はweb.xmlで例外ハンドリングを行う
+
+### ◇type12：  
+アプリケーション内（コントローラー、サービス、DAO層など）で発生した例外をすべてハンドリングする  
+すべてのリクエストはコントローラー経由となり、スローされる例外（大体はRuntime系）もコントローラーから呼び出しもとへスローされる  
+すべてのコントローラーからスローされる例外を一律ハンドリングすることができる
