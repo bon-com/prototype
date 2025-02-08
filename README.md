@@ -1,6 +1,7 @@
 # prototypeアプリ
 さまざまWebアプリ作成用のスニペットを保存する  
-###◆SpringMVCメモ
+
+### ◆SpringMVCメモ
 * DIコンテナが2種類ある
 * Webアプリケーションコンテキスト（springMVCContext.xml）はプレゼンテーション層のDIコンテナ
 * ルートアプリケーションコンテキスト（applicationContext.xml）はサービス層以降のDIコンテナ  
@@ -12,7 +13,7 @@ springMVCContext.xml（Webアプリケーションコンテキスト用Bean定�
 ContextLoaderListenerが親、DispatcherServletは子という関係  
 子から親は参照可能だが、親から子を参照できない  
 
-## ◆インデックス
+### ◆インデックス
  - type1：SpringMVCのGETリクエストを取得
  - type2：基本的なPOSTリクエストの取得
  - type3：様々なフォーム部品をPOSTリクエストで取得
