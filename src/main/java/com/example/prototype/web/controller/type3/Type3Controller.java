@@ -42,7 +42,7 @@ public class Type3Controller {
 		hobbies.put("3", "ハイキング");
 		model.addAttribute("hobbies", hobbies);
 		
-		return "type3/first";
+		return "type03/first";
 	}
 
 	/**

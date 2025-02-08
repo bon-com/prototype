@@ -40,7 +40,7 @@ public class Type6Controller {
 	 */
 	@GetMapping(value = "type6/")
 	public String showFirst() {
-		return "type6/first";
+		return "type06/first";
 	}
 
 	/**
@@ -53,7 +53,7 @@ public class Type6Controller {
 		// 入力チェック
 		if (rs.hasErrors()) {
 			// 入力エラー
-			return "type6/first";
+			return "type06/first";
 		}
 		// 画面側のフォームの中身をクリアするため、一旦リダイレクト
 		return "redirect:/type6/"; 

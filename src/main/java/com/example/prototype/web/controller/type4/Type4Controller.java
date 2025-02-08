@@ -41,7 +41,7 @@ public class Type4Controller {
 	 */
 	@GetMapping(value = "type4/")
 	public String showFirst() {
-		return "type4/first";
+		return "type04/first";
 	}
 
 	/**

@@ -36,7 +36,7 @@ public class Type2Controller {
 	 */
 	@GetMapping(value = "type2/")
 	public String showFirst() {
-		return "type2/first";
+		return "type02/first";
 	}
 	
 	/**
@@ -48,6 +48,6 @@ public class Type2Controller {
 	public String send(@ModelAttribute("type2Form") Type2Form form) {
 		logger.debug("★★★form.name：" + form.getName() + "★★★");
 		logger.debug("★★★form.child.num：" + form.getChild().getNum() + "★★★");
-		return "type2/first";
+		return "type02/first";
 	}
 }

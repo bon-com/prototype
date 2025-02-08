@@ -23,7 +23,7 @@ public class Type1Controller {
 	 */
 	@GetMapping(value = "type1/")
 	public String showFirst() {
-		return "type1/first";
+		return "type01/first";
 	}
 	
 	/**
@@ -34,7 +34,7 @@ public class Type1Controller {
 	@GetMapping(value="type1/foo/{id}")
 	public String pattern1(@PathVariable int id) {
 		logger.debug("★★★id：" + id + "★★★\n");
-		return "type1/first";
+		return "type01/first";
 	}
 	
 	/**
@@ -47,7 +47,7 @@ public class Type1Controller {
 	public String pattern2(@PathVariable int companyId, @PathVariable int id) {
 		logger.debug("★★★companyId：" + companyId + "★★★");
 		logger.debug("★★★id：" + id + "★★★\n");
-		return "type1/first";
+		return "type01/first";
 	}
 	
 	/**
@@ -60,6 +60,6 @@ public class Type1Controller {
 	public String pattern4(@RequestParam int id, @RequestParam String name) {
 		logger.debug("★★★id：" + id + "★★★");
 		logger.debug("★★★name：" + name + "★★★\n");
-		return "type1/first";
+		return "type01/first";
 	}
 }

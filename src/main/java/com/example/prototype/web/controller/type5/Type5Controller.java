@@ -37,7 +37,7 @@ public class Type5Controller {
 	@GetMapping(value = "type5/")
 	public String showFirst(Model model) {
 		
-		return "type5/first";
+		return "type05/first";
 	}
 
 	/**
@@ -50,7 +50,7 @@ public class Type5Controller {
 		// 入力チェック
 		if (rs.hasErrors()) {
 			// 入力エラー
-			return "type5/first";
+			return "type05/first";
 		}
 		// 画面側のフォームの中身をクリアするため、一旦リダイレクト
 		return "redirect:/type5/"; 

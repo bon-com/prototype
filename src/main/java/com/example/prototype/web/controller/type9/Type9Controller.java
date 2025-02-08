@@ -36,7 +36,7 @@ public class Type9Controller {
 	 */
 	@GetMapping(value = "type9/")
 	public String showFirst() {
-		return "type9/first";
+		return "type09/first";
 	}
 
 	/**
@@ -49,7 +49,7 @@ public class Type9Controller {
 		// 入力チェック
 		if (rs.hasErrors()) {
 			// 入力エラー
-			return "type9/first";
+			return "type09/first";
 		}
 		// 画面側のフォームの中身をクリアするため、一旦リダイレクト
 		return "redirect:/type9/"; 

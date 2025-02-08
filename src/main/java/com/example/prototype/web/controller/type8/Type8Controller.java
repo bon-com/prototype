@@ -36,7 +36,7 @@ public class Type8Controller {
 	 */
 	@GetMapping(value = "type8/")
 	public String showFirst() {
-		return "type8/first";
+		return "type08/first";
 	}
 
 	/**
@@ -49,7 +49,7 @@ public class Type8Controller {
 		// 入力チェック
 		if (rs.hasErrors()) {
 			// 入力エラー
-			return "type8/first";
+			return "type08/first";
 		}
 		// 画面側のフォームの中身をクリアするため、一旦リダイレクト
 		return "redirect:/type8/"; 
