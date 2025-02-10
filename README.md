@@ -26,6 +26,7 @@ ContextLoaderListenerが親、DispatcherServletは子という関係
  - type10：順序をつけた相関チェックを行う方法（Bean Validation）
  - type11：web.xmlを使用した例外ハンドリング方法
  - type12：HandlerExceptionResolverを使用した例外ハンドリング方法
+ - type13：@SessionAttributesを使用したセッション管理方法
 
 ## ◆補足説明
 
@@ -69,4 +70,8 @@ PasswordMatchValidatorを作成してorg.springframework.validationを実装し�
 ### ◇type12：  
 アプリケーション内（コントローラー、サービス、DAO層など）で発生した例外をすべてハンドリングする  
 すべてのリクエストはコントローラー経由となり、スローされる例外（大体はRuntime系）もコントローラーから呼び出しもとへスローされる  
-すべてのコントローラーからスローされる例外を一律ハンドリングすることができる
+すべてのコントローラーからスローされる例外を一律ハンドリングすることができる  
+
+### ◇type13：  
+@SessionAttributesを使用することで、単一コントローラー内でセッション管理を行なえる  
+個別にセッションで管理しているオブジェクトを削除することはできないので注意
