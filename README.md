@@ -28,6 +28,7 @@ ContextLoaderListenerが親、DispatcherServletは子という関係
  - type12：HandlerExceptionResolverを使用した例外ハンドリング方法
  - type13：@SessionAttributesを使用したセッション管理方法
  - type14：@SessionScopeを使用したセッション管理方法
+ - type15：HttpSessionを使用したセッション管理方法
 
 ## ◆補足説明
 
@@ -81,3 +82,8 @@ PasswordMatchValidatorを作成してorg.springframework.validationを実装し�
 @SessionScopeを付与したオブジェクトをDIコンテナで管理することで、  
 コントローラー間でのセッション管理が可能となる  
 個別にセッションで管理しているオブジェクトを削除することはできないので注意  
+
+### ◇type15：  
+HttpSessionを使用することで、Springに依存しないセッション管理を行うことができる
+個別にセッションで管理しているオブジェクトを削除することも可能
+

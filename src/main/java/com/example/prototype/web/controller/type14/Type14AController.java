@@ -27,9 +27,6 @@ public class Type14AController {
 	
 	/**
 	 * フォームの設定
-	 * コントローラーに@SessionAttributesを付与
-	 * このメソッドに@ModelAttributeを付与することで、初回リクエストのみモデルに格納される。
-	 * これ以降、セッションのモデルが使用される。
 	 * 
 	 * @return
 	 */

@@ -106,6 +106,12 @@
 					</td>
 					<td>複数のコントローラーでセッション管理を行う方法についてメモ</td>
 				</tr>
+				<tr>
+					<td>
+						<a href="<c:url value='/type15A/'/>">HttpSessionを使用したセッション管理方法</a>
+					</td>
+					<td>Springに依存しないセッション管理を行う方法についてメモ</td>
+				</tr>
 			</tbody>
 
 		</table>
