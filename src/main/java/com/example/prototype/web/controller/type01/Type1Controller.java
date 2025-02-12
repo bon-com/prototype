@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.example.prototype.web.dto.type01.Type1Form;
+
 /**
  * GETリクエスト方法
  * 
@@ -51,15 +53,30 @@ public class Type1Controller {
 	}
 	
 	/**
-	 * クエリパラメータ取得
+	 * クエリパラメータ取得その１
 	 * @param id
 	 * @param name
 	 * @return
 	 */
 	@GetMapping(value="type1/foo/param", params= {"id", "name"})
-	public String pattern4(@RequestParam int id, @RequestParam String name) {
+	public String pattern3(@RequestParam int id, @RequestParam String name) {
 		logger.debug("★★★id：" + id + "★★★");
 		logger.debug("★★★name：" + name + "★★★\n");
 		return "type01/first";
 	}
+	
+	/**
+	 * クエリパラメータ取得その２（クエリパラメータをオブジェクトにバインドする）
+	 * Springが自動でクエリパラメータをオブジェクトにバインドしてくれる
+	 * @param id
+	 * @param name
+	 * @return
+	 */
+	@GetMapping(value="type1/foo/bar/param")
+	public String pattern4(Type1Form form) {
+		logger.debug("★★★id：" + form.getId() + "★★★");
+		logger.debug("★★★name：" + form.getName() + "★★★\n");
+		return "type01/first";
+	}
+	
 }

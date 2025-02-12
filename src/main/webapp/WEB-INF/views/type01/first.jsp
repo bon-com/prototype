@@ -1,4 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -17,6 +18,9 @@
 		</p>
 		<p>
 			<a href="<c:url value='/type1/foo/param?id=5&name=abc'/>">GETリクエストその３（クエリパラメータ）</a>
+		</p>
+		<p>
+			<a href="<c:url value='/type1/foo/bar/param?id=5&name=abc'/>">GETリクエストその４（クエリパラメータをオブジェクトで取得）</a>
 		</p>
 
 		<div class="form-group text-center">
